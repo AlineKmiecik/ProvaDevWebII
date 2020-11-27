@@ -3,6 +3,7 @@ import { Router } from '@angular/router';
 import { Medico } from 'src/app/models/Medico';
 import { SistemaMedicoService } from 'src/app/services/sistema-medico.service';
 
+
 @Component({
   selector: 'app-create-medico',
   templateUrl: './create-medico.component.html',
@@ -17,7 +18,10 @@ export class CreateMedicoComponent implements OnInit {
   }
 
   create(): void {
-       
+    this.Medico.Nome = (<HTMLInputElement>document.getElementById("Nome")).value;;
+    this.Medico.Crm = (<HTMLInputElement>document.getElementById("Crm")).value;;
+    this.Medico.Especialidade = (<HTMLInputElement>document.getElementById("Especialidade")).value;;
+
    this.service.create(this.Medico).subscribe((Medico) => {
         console.log(Medico);
     });
