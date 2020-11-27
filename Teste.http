@@ -3,14 +3,14 @@ POST http://localhost:1234/medico/cadastrar
 Content-Type: application/json
 
 {
-    "Nome": "kkk",
-    "Crm": "190910",
+    "Nome": "jurema",
+    "Crm": "321654321",
     "Especialidade": "Clinico Geral"
 }
 
 
 ###BUSCAR POR CRM 
-GET http://localhost:1234/medico/buscar/190910
+GET http://localhost:1234/medico/buscar/321654321
 
 
 
@@ -26,11 +26,11 @@ Content-Type: application/json
 {
     "id": "5f765b373075b9335c3e01c3",
     "Nome": "Aline Kmiecik",
-    "Crm": "190932",
-    "Especialidade": "Geriatria"
+    "Crm": "321654321",
+    "Especialidade": "clinico geral"
 }
 
 
 
 ###DELETAR
-DELETE http://localhost:1234/medico/remover/190910
+DELETE http://localhost:1234/medico/remover/321654321

@@ -1,0 +1,21 @@
+
+<mat-card-title> Cadastro Médico </mat-card-title>
+
+<div class="example-container">
+    <mat-form-field appearance="fill">
+      <mat-label>Nome</mat-label>
+      <input placeholder="Nome" [(ngModel)]="Nome" name="Nome"> 
+    </mat-form-field>
+    <br>
+    <mat-form-field appearance="fill">
+        <mat-label>Crm</mat-label>
+        <input placeholder="Crm" [(ngModel)]="Crm" name="Crm">
+    </mat-form-field>
+    <br>
+    <mat-form-field appearance="fill">
+        <mat-label>Especialidade</mat-label>
+        <input placeholder="Especialidade" [(ngModel)]="Especialidade" name="Especialidade">
+    </mat-form-field>
+
+    <button mat-raised-button color="warn" (click)="create()">Cadastrar</button>
+</div>

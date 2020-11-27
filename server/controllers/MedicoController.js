@@ -4,12 +4,13 @@ const MedicoSchema = require("../models/Medico.js");
 class MedicoController {
     async store(req, res) {
         try{
-            var result = await Medico.create(req.body);
+            let result = await Medico.create(req.body);
             console.log(req.body);
             res.status(201).json(result);
         }catch(error) {
             res.status(500).json(error)
         }
+        
     }
     async get(req, res){
         var result = await Medico.find({});
